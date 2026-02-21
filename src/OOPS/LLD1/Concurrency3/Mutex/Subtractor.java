@@ -7,7 +7,6 @@ public class Subtractor implements Runnable {
     private Lock lock;
 
     Subtractor(Count count, Lock lock){
-
         this.count = count;
         this.lock = lock;
     }
@@ -19,8 +18,11 @@ public class Subtractor implements Runnable {
     public void SubtractNUmber(){
         for(int i = 1; i<= 100; i++){
             lock.lock();
-            count.value -= i; //Critical Section
-            lock.unlock();
+            try {
+                count.value -= i; //Critical Section
+            } finally {
+                lock.unlock();
+            }
         }
     }
 }
