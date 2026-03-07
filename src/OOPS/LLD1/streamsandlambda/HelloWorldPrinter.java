@@ -1,4 +1,4 @@
-package OOPS.LLD1.streansandlambda;
+package OOPS.LLD1.streamsandlambda;
 
 public class HelloWorldPrinter implements Runnable{
     @Override

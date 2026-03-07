@@ -1,4 +1,4 @@
-package OOPS.LLD1.streansandlambda;
+package OOPS.LLD1.streamsandlambda;
 
 public class Car implements Comparable<Car>{
     String name;

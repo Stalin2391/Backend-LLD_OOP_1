@@ -1,4 +1,4 @@
-package OOPS.LLD1.streansandlambda;
+package OOPS.LLD1.streamsandlambda;
 
 import java.util.*;
 
@@ -23,6 +23,7 @@ public class Client {
 
         //Lambda -> Works with Functional interfaces.
         // Syntax : () -> {}
+        // Way of providing implementation to functional interface.
 
         Thread t2 = new Thread(() -> {
             // Implementation of run method.
