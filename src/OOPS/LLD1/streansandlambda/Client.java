@@ -63,7 +63,26 @@ public class Client {
             }
         };
 
-        Collections.sort(cars, comparator);
+        CarNameComparator carNameComparator = new CarNameComparator();
+
+//        Collections.sort(cars, carNameComparator);
+
+        // Anonymous Class
+        Comparator<Car> nameComaparator = new Comparator<Car>() {
+            @Override
+            public int compare(Car o1, Car o2) {
+                return o2.name.compareTo(o1.name);
+            }
+        };
+
+
+        Collections.sort(cars, (Car carName1, Car carName2) -> carName1.name.compareTo(carName2.name));
+
+
+
+//        Collections.sort(cars, nameComaparator);
+
+
 
 //        Collections.sort(cars, (Car car1, Car car2) -> car2.noOfSeats - car1.noOfSeats);
 
