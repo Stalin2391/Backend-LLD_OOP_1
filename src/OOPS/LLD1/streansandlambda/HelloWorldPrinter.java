@@ -3,6 +3,6 @@ package OOPS.LLD1.streansandlambda;
 public class HelloWorldPrinter implements Runnable{
     @Override
     public void run() {
-        System.out.println("Hello World " +  Thread.currentThread().getName());
+        System.out.println("Hello World Thread Name:" +  Thread.currentThread().getName());
     }
 }

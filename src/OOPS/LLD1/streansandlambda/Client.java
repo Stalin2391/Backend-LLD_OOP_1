@@ -9,5 +9,14 @@ public class Client {
         System.out.println("Main Thread : " + Thread.currentThread().getName());
         Thread thread = new Thread(new HelloWorldPrinter());
         thread.start();
+        // Anonymous Class
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("Hello World Runnable in Main Thread Name:" +  Thread.currentThread().getName());
+            }
+        };
+        Thread t1 = new Thread(runnable);
+        t1.start();
     }
 }
