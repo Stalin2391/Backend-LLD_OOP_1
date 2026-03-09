@@ -40,5 +40,13 @@ public class Client {
 
         }
 
+
+        // Checked Exceptions
+        //  - compile time exceptions
+        //  - compiler can check these exceptions at compile time.
+        //  - directly inherits from exceptions class.
+        //  - handle or throw
+
+
     }
 }
