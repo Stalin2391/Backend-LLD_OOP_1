@@ -5,5 +5,7 @@ public class Client {
         DbConnection db1 = DbConnection.getInstance();
         DbConnection db2 = DbConnection.getInstance();
         System.out.println("DbConnection");
+
+        //synchronization with slower
     }
 }

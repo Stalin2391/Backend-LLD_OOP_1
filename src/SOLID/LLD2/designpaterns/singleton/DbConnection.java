@@ -8,8 +8,9 @@ public class DbConnection {
 
     private DbConnection() {};
 
-    public static DbConnection getInstance() {
+    public synchronized static DbConnection getInstance() {
         if(instance == null) instance = new DbConnection();
         return instance;
+
     }
 }
